@@ -1,13 +1,11 @@
-/*
-Implement the multi-head attention mechanism, a critical component of transformer models. You need to implement three functions:
+# Implement the multi-head attention mechanism, a critical component of transformer models. You need to implement three functions:
 
-compute_qkv(X, W_q, W_k, W_v): Compute Query, Key, and Value matrices by multiplying input X with weight matrices. Returns a tuple (Q, K, V) where each has the same shape as X.
+# compute_qkv(X, W_q, W_k, W_v): Compute Query, Key, and Value matrices by multiplying input X with weight matrices. Returns a tuple (Q, K, V) where each has the same shape as X.
 
-self_attention(Q, K, V): Compute scaled dot-product attention for a single head. Returns the attention output with the same shape as V.
+# self_attention(Q, K, V): Compute scaled dot-product attention for a single head. Returns the attention output with the same shape as V.
 
-multi_head_attention(Q, K, V, n_heads): Split Q, K, V into multiple heads along the feature dimension, compute self-attention for each head independently, and concatenate results. Returns output with the same shape as Q.
+# multi_head_attention(Q, K, V, n_heads): Split Q, K, V into multiple heads along the feature dimension, compute self-attention for each head independently, and concatenate results. Returns output with the same shape as Q.
 
-*/
 import numpy as np
 from typing import Tuple
 
