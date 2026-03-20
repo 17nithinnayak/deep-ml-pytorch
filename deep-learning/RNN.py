@@ -1,17 +1,5 @@
 # Write a Python function that implements a simple Recurrent Neural Network (RNN) cell. The function should process a sequence of input vectors and produce the final hidden state. Use the tanh activation function for the hidden state updates. The function should take as inputs the sequence of input vectors, the initial hidden state, the weight matrices for input-to-hidden and hidden-to-hidden connections, and the bias vector. The function should return the final hidden state after processing the entire sequence, rounded to four decimal places.
-# ht = tanh(W 
-x
-​
- x 
-t
-​
- +W 
-h
-​
- h 
-t−1
-​
- +b)
+# ht = tanh(W xt + Wh ht + b)
 import numpy as np
 
 def rnn_forward(input_sequence: list[list[float]], initial_hidden_state: list[float], Wx: list[list[float]], Wh: list[list[float]], b: list[float]) -> list[float]:
