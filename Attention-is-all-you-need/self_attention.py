@@ -1,12 +1,12 @@
-/*
-Implement the self-attention mechanism, a fundamental component of transformer models used in NLP and computer vision.
 
-Your task is to implement the self_attention function that computes attention output given Query (Q), Key (K), and Value (V) matrices.
+# Implement the self-attention mechanism, a fundamental component of transformer models used in NLP and computer vision.
 
-The self-attention formula is: Attention(Q, K, V) = softmax(Q * K^T / sqrt(d_k)) * V
+# Your task is to implement the self_attention function that computes attention output given Query (Q), Key (K), and Value (V) matrices.
 
-where d_k is the dimensionality of the key vectors (number of columns in K).
-*/
+# The self-attention formula is: Attention(Q, K, V) = softmax(Q * K^T / sqrt(d_k)) * V
+
+# where d_k is the dimensionality of the key vectors (number of columns in K).
+
 import numpy as np
 
 def compute_qkv(X, W_q, W_k, W_v):
